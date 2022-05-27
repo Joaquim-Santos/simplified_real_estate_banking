@@ -31,8 +31,8 @@ Há 4 diferentes tipos de possíveis jogadores, cujo comportamento dita suas aç
 
 - **Impulsivo**: compra qualquer propriedade sobre a qual ele parar.
 - **Exigente**: compra qualquer propriedade, desde que o valor do aluguel dela seja maior do que 50.
-- **Cauteloso**: compra qualquer propriedade, desde que ele tenha uma reserva de 80 saldo sobrando depois de realizada a compra.
-- **Aleatório**: compra a propriedade em que ele parar em cima com probabilidade de 50%.
+- **Cauteloso**: compra qualquer propriedade, desde que ele tenha uma reserva de 80 de saldo sobrando depois de realizada a compra.
+- **Aleatório**: compra a propriedade em que ele parar em cima, com probabilidade de 50%.
 
 ## Objetivo
 
