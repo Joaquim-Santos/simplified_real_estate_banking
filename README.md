@@ -36,7 +36,7 @@ Há 4 diferentes tipos de possíveis jogadores, cujo comportamento dita suas aç
 
 ## Objetivo
 
-A ideia é rodar uma simulação de várias partidas, para decidir qual a melhor estratégia dentre as 4 citadas. Assim sendo, a saida de uma execução do **script principal** serão os dados referntes ao conjunto de simulações executadas (*default* 300), sendo:
+A ideia é rodar uma simulação de várias partidas, para decidir qual a melhor estratégia dentre as 4 citadas. Assim sendo, a saida de uma execução do **script principal** serão os dados referentes ao conjunto de simulações executadas (*default* 300), sendo:
 
 - Quantas partidas terminam por *time out* (1000 rodadas).
 - Quantos turnos, em média, demora uma partida.
