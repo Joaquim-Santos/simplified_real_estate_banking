@@ -1,17 +1,18 @@
 import random
 from real_estate_banking.entities.board import Board
+from real_estate_banking.entities.property import Property
 from abc import ABC, abstractmethod
 
 
 class AbstractPlayer(ABC):
-    def __init__(self, turn_order: int):
-        self._turn_order = turn_order
+    def __init__(self, type_name: str):
+        self._type_name = type_name
         self._financial_balance = 300
         self._position = -1
 
     @property
-    def turn_order(self):
-        return self._turn_order
+    def type_name(self):
+        return self._type_name
 
     @property
     def financial_balance(self):
@@ -39,5 +40,8 @@ class AbstractPlayer(ABC):
             self.financial_balance += 100
 
     @abstractmethod
-    def evaluate_purchase(self, property_price):
+    def evaluate_purchase(self, target_property: Property):
         pass
+
+    def __str__(self):
+        return f'Jogador {self.type_name} - Saldo de {self.financial_balance}'
