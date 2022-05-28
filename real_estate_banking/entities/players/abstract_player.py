@@ -9,6 +9,7 @@ class AbstractPlayer(ABC):
         self._type_name = type_name
         self._financial_balance = 300
         self._position = -1
+        self._acquired_properties = []
 
     @property
     def type_name(self):
@@ -29,6 +30,14 @@ class AbstractPlayer(ABC):
     @position.setter
     def position(self, new_value):
         self._position = new_value
+
+    @property
+    def acquired_properties(self):
+        return self._acquired_properties
+
+    @acquired_properties.setter
+    def acquired_properties(self, new_value):
+        self._acquired_properties.append(new_value)
 
     def roll_dice(self):
         number = random.randint(1, 6)

@@ -30,6 +30,7 @@ class Match:
                player.evaluate_purchase(target_property):
                 target_property.owner = player
                 player.financial_balance -= target_property.purchase_price
+                player.acquired_properties = player.position  # Posição atual do jogador é onde está a propriedade.
         else:
             player.financial_balance -= target_property.rent_value
             target_property.owner.financial_balance += target_property.rent_value
