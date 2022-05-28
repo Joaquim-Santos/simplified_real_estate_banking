@@ -35,6 +35,12 @@ class Match:
             player.financial_balance -= target_property.rent_value
             target_property.owner.financial_balance += target_property.rent_value
 
+    def eliminate_player_by_balance(self, player: AbstractPlayer):
+        if player.financial_balance < 0:
+            for position in player.acquired_properties:
+                self.board.properties[position].owner = None
+            self.players.remove(player)
+
     def start(self):
         # Loop executa o jogo enquanto não for atribuído um vencedor. A iteração da lista de players é feita em cima de
         # uma cópia, assim um jogador pode ser removido durante  iteração e a ordem dos posteriores é mantida.
@@ -42,3 +48,5 @@ class Match:
             for player in list(self.players):
                 player.roll_dice()
                 self.evaluate_property(self.board.properties[player.position], player)
+
+                self.eliminate_player_by_balance(player)
