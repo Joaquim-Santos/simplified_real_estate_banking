@@ -101,3 +101,7 @@ class Match:
                 if self.verify_victory_condition_1():
                     self.winner = self.players[0]
                     break
+
+    def __str__(self):
+        return f'Dados da Partida: Time out: {"sim" if self.timeout else "Não"} - Número de Rodadas: {self.round} - ' \
+               f'Número de Turnos: {self.count_turn}'
