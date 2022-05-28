@@ -1,8 +1,9 @@
 import random
 from real_estate_banking.entities.board import Board
+from abc import ABC, abstractmethod
 
 
-class AbstractPlayer:
+class AbstractPlayer(ABC):
     def __init__(self, turn_order: int):
         self._turn_order = turn_order
         self._financial_balance = 300
@@ -36,3 +37,7 @@ class AbstractPlayer:
         if self.position > (Board.length() - 1):
             self.position -= Board.length()
             self.financial_balance += 100
+
+    @abstractmethod
+    def evaluate_purchase(self, property_price):
+        pass

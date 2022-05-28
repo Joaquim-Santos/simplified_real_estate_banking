@@ -45,7 +45,7 @@ A ideia é rodar uma simulação de várias partidas, para decidir qual a melhor
 
 ## Estrutura e execução
 
-O projeto foi implementado seguindo princípios de Orientação a Objetos e *Clean Code*, de modo que foram definidas Classes para representação das entidades **Jogador**, **Propriedade**, **Tabuleiro** e **Jogo**, as quais possuem os métodos responsáveis pela execução de suas ações, construindo o fluxo do jogo.
+O projeto foi implementado seguindo princípios de Orientação a Objetos e *Clean Code*, de modo que foram definidas Classes para representação das entidades **Jogador**, **Propriedade**, **Tabuleiro** e **Partida**, as quais possuem os métodos responsáveis pela execução de suas ações, construindo o fluxo do jogo.
 
 O script **simulation.py** é respnsável por iniciar um conjunto de simulações e gerar as estatísticas de saída. Por default, são executadas 300 simulações, bastando alterar esse valor na chamada do método de simulação, no __main__. Para cada partida, será definido, aleatoriamente, a quantidade de jogadores de cada tipo, de modo que sempre haverá no mínimo 1 jogador de cada tipo, e no máximo 3. Assim sendo, a partida poderá ter de 4 a 12 jogadores.
 
