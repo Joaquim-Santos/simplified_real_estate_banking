@@ -43,7 +43,7 @@ A ideia é rodar uma simulação de várias partidas, para decidir qual a melhor
 - Qual a porcentagem de vitórias por comportamento dos jogadores.
 - Qual o comportamento mais vitorioso.
 
-Ao fim da execução, será gerado um arquivo de texto, contendo esses dados adequadamente formatados, que estarão ao seu final. No restante do arquivo, forão escritos os dados referente à cada partida da simulação, cada qual com seu vencedor.
+Ao fim da execução, será gerado um arquivo de texto, contendo esses dados adequadamente formatados, que estarão ao seu final. No restante do arquivo, foram escritos os dados referente à cada partida da simulação, cada qual com seu vencedor.
 
 ## Estrutura e execução
 
